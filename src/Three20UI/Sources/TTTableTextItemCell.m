@@ -107,7 +107,7 @@ static const UILineBreakMode kLineBreakMode = UILineBreakModeWordWrap;
 - (void)layoutSubviews {
   [super layoutSubviews];
 
-  self.textLabel.frame = CGRectInset(self.contentView.bounds,
+  self.textLabel.frame = CGRectInset(CGRectIntegral(self.contentView.bounds),
                                      kTableCellHPadding, kTableCellVPadding);
 }
 
