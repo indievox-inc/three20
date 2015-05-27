@@ -628,7 +628,7 @@
 			name = "extThree20JSONUnitTests+SBJSON";
 			productName = CoreUnitTests;
 			productReference = EB9E6C6210B6A8F800DE563C /* extJSONUnitTests+SBJSON.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -865,6 +865,7 @@
 					EXTJSON_YAJL,
 				);
 				SDKROOT = iphoneos;
+				VALID_ARCHS = "i386 armv6 armv7 armv7s arm64";
 			};
 			name = Debug;
 		};
@@ -882,6 +883,7 @@
 				);
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = iphoneos;
+				VALID_ARCHS = "i386 armv6 armv7 armv7s arm64";
 			};
 			name = Internal;
 		};
@@ -893,6 +895,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_PREPROCESSOR_DEFINITIONS = EXTJSON_YAJL;
 				SDKROOT = iphoneos;
+				VALID_ARCHS = "i386 armv6 armv7 armv7s arm64";
 				ZERO_LINK = NO;
 			};
 			name = Release;
@@ -901,11 +904,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6E6454021184BDD500F08CB1 /* Project.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				"ARCHS[sdk=iphoneos*]" = "$(ARCHS_STANDARD)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
+				VALID_ARCHS = "i386 armv6 armv7 armv7s arm64";
 			};
 			name = Internal;
 		};
@@ -913,6 +919,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6E55A4B31183CA80002768DE /* Library+SBJSON.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -924,6 +931,7 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = iphoneos;
+				VALID_ARCHS = "i386 armv6 armv7 armv7s arm64";
 			};
 			name = Internal;
 		};
@@ -945,6 +953,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6E55A4B31183CA80002768DE /* Library+SBJSON.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -954,6 +963,7 @@
 				);
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				SDKROOT = iphoneos;
+				VALID_ARCHS = "i386 armv6 armv7 armv7s arm64";
 			};
 			name = Debug;
 		};
@@ -961,11 +971,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6E55A4B31183CA80002768DE /* Library+SBJSON.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_PREPROCESSOR_DEFINITIONS = EXTJSON_SBJSON;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=iphoneos*]" = 5.1.1;
 				SDKROOT = iphoneos;
+				VALID_ARCHS = "i386 armv6 armv7 armv7s arm64";
 				ZERO_LINK = NO;
 			};
 			name = Release;
@@ -974,11 +987,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6E6454021184BDD500F08CB1 /* Project.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				"ARCHS[sdk=iphoneos*]" = "$(ARCHS_STANDARD)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
+				VALID_ARCHS = "i386 armv6 armv7 armv7s arm64";
 			};
 			name = Debug;
 		};
@@ -986,12 +1002,16 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6E6454021184BDD500F08CB1 /* Project.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				"ARCHS[sdk=iphoneos*]" = "$(ARCHS_STANDARD)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=iphoneos*]" = 5.1.1;
 				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
+				VALID_ARCHS = "i386 armv6 armv7 armv7s arm64";
 			};
 			name = Release;
 		};
