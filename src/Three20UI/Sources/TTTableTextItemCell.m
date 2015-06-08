@@ -89,6 +89,7 @@ static const UILineBreakMode kLineBreakMode = UILineBreakModeWordWrap;
   CGSize size = [item.text sizeWithFont:font
                       constrainedToSize:CGSizeMake(width, CGFLOAT_MAX)
                           lineBreakMode:kLineBreakMode];
+  size.height = (int)(size.height + 1.0);
   if (size.height > kMaxLabelHeight) {
     size.height = kMaxLabelHeight;
   }
