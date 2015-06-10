@@ -35,13 +35,13 @@
 /**
  * The total number of photos in the source, independent of the number that have been loaded.
  */
-@property (nonatomic, readonly) NSInteger numberOfPhotos;
+@property (nonatomic, readonly) NSInteger tt_numberOfPhotos;
 
 /**
  * The maximum index of photos that have already been loaded.
  */
 @property (nonatomic, readonly) NSInteger maxPhotoIndex;
 
-- (id<TTPhoto>)photoAtIndex:(NSInteger)index;
+- (id<TTPhoto>)tt_photoAtIndex:(NSInteger)index;
 
 @end
